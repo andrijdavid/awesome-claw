@@ -28,6 +28,11 @@
       "name": "secure-openclaw",
       "url": "https://github.com/ComposioHQ/secure-openclaw",
       "description": "A personal 24x7 AI assistant like OpenClaw that runs on your messaging platforms. Send a message on WhatsApp, Telegram, Signal, or iMessage and get responses from Claude with full tool access, persistent memory, scheduled reminders, and integrations with 500+ apps."
+    },
+    {
+      "name": "PicoClaw",
+      "url": "https://github.com/sipeed/picoclaw",
+      "description": "PicoClaw is an ultra-lightweight personal AI Assistant inspired by nanobot, refactored from the ground up in Go through a self-bootstrapping process, where the AI agent itself drove the entire architectural migration and code optimization."
     }
   ],
   "skillsMarketplace": [
