@@ -14,7 +14,7 @@ A curated awesome list for OpenClaw forks and a skills marketplace for toolchain
 
 <!-- BEGIN: GENERATED_REPO_LIST -->
 
-_Star counts updated: 2026-02-12 19:49:03 UTC._
+_Star counts updated: 2026-02-12 18:50:00 UTC._
 
 ### OpenClaw Forks
 
@@ -43,23 +43,6 @@ _Star counts updated: 2026-02-12 19:49:03 UTC._
 
 - Daily star updates: `.github/workflows/update-stars.yml`
 - CI checks (markdownlint, prettier, lychee, awesome-bot): `.github/workflows/ci.yml`
-
-## Cloudflare Pages Deployment
-
-This project uses Cloudflare Pages Git integration for deployment (no GitHub deploy workflow needed).
-
-Cloudflare Pages build settings:
-
-- Production branch: `main`
-- Root directory: `/`
-- Build command: `pip install --disable-pip-version-check -r requirements-docs.txt && mkdocs build --strict`
-- Build output directory: `site`
-- Environment variable: `PYTHON_VERSION=3.12`
-
-Deploy command:
-
-- With Git integration: no manual deploy command is required; pushing to `main` deploys automatically.
-- Manual fallback (CLI): `npx -y wrangler@4 pages deploy site --project-name <your-cloudflare-project-name>`
 
 ## Development
 
