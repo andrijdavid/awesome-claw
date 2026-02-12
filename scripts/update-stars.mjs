@@ -63,8 +63,9 @@ function renderEntry(entry) {
   return `- [${entry.name}](${entry.url})${badge}${stars}${description}`;
 }
 
-function renderGeneratedBlock(data, updatedAtIso) {
+function renderGeneratedBlock(data, updatedAtIso, headingLevel = 3) {
   const updatedLine = `_Star counts updated: ${updatedAtIso} UTC._`;
+  const headingPrefix = "#".repeat(headingLevel);
 
   const forks = data.openclawForks.map(renderEntry).join("\n");
   const marketplace = data.skillsMarketplace.map(renderEntry).join("\n");
@@ -72,10 +73,12 @@ function renderGeneratedBlock(data, updatedAtIso) {
   return [
     updatedLine,
     "",
-    "### OpenClaw Forks",
+    `${headingPrefix} OpenClaw Forks`,
+    "",
     forks,
     "",
-    "### Skills Marketplace",
+    `${headingPrefix} Skills Marketplace`,
+    "",
     marketplace,
   ].join("\n");
 }
@@ -141,7 +144,8 @@ async function main() {
   }
 
   const updatedAtIso = new Date().toISOString().replace("T", " ").replace(/\.\d{3}Z$/, "");
-  const generatedBlock = renderGeneratedBlock(repoData, updatedAtIso);
+  const generatedBlock = renderGeneratedBlock(repoData, updatedAtIso, 3);
+  const generatedStandaloneBlock = renderGeneratedBlock(repoData, updatedAtIso, 2);
 
   const readme = await readFile(README_FILE, "utf8");
   const docsIndex = await readFile(DOCS_INDEX_FILE, "utf8");
@@ -154,7 +158,7 @@ async function main() {
   await writeFile(DOCS_INDEX_FILE, updatedDocsIndex, "utf8");
   await writeFile(
     GENERATED_STARS_FILE,
-    `# Generated Stars\n\n${generatedBlock}\n`,
+    `# Generated Stars\n\n${generatedStandaloneBlock}\n`,
     "utf8",
   );
 
