@@ -1,0 +1,8 @@
+verbose = true
+max_redirects = 5
+exclude_path = ["site"]
+
+# Shields endpoints occasionally rate-limit anonymous requests in CI.
+exclude = [
+  "https://img.shields.io/.*"
+]

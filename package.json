@@ -1,0 +1,16 @@
+{
+  "name": "awesome-claw",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Awesome list for OpenClaw forks and skills marketplace links.",
+  "type": "module",
+  "scripts": {
+    "update:stars": "node scripts/update-stars.mjs",
+    "lint:md": "npx -y markdownlint-cli2@0.18.1 \"README.md\" \"docs/**/*.md\"",
+    "format:check": "npx -y prettier@3.5.3 --check .",
+    "format:write": "npx -y prettier@3.5.3 --write .",
+    "lint:awesome": "npx -y awesome-bot README.md --allow-redirect --request-delay 1",
+    "check": "npm run lint:md && npm run format:check && npm run lint:awesome",
+    "docs:build": "python -m pip install --disable-pip-version-check -r requirements-docs.txt && mkdocs build --strict"
+  }
+}

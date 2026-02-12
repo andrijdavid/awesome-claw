@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: markdownlint
+        run: npm run lint:md
+
+      - name: prettier (check)
+        run: npm run format:check
+
+      - name: lychee link checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: --config .lychee.toml README.md docs/**/*.md
+
+      - name: awesome-bot compliance
+        run: npm run lint:awesome

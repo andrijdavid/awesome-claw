@@ -1,0 +1,56 @@
+{
+  "openclawForks": [
+    {
+      "name": "NanoClaw",
+      "owner": "qwibitai",
+      "repo": "nanoclaw",
+      "url": "https://github.com/qwibitai/nanoclaw",
+      "description": "OpenClaw fork with modernized updates."
+    },
+    {
+      "name": "IronClaw",
+      "owner": "nearai",
+      "repo": "ironclaw",
+      "url": "https://github.com/nearai/ironclaw",
+      "description": "OpenClaw fork focused on gameplay and engine improvements."
+    },
+    {
+      "name": "OpenClaw-Composio",
+      "url": "https://github.com/ComposioHQ/openclaw-composio",
+      "description": "OpenClaw fork with integrated Composio plugin for easy tool authentication"
+    },
+    {
+      "name": "nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "description": "🐈 nanobot: The Ultra-Lightweight OpenClaw"
+    },
+    {
+      "name": "secure-openclaw",
+      "url": "https://github.com/ComposioHQ/secure-openclaw",
+      "description": "A personal 24x7 AI assistant like OpenClaw that runs on your messaging platforms. Send a message on WhatsApp, Telegram, Signal, or iMessage and get responses from Claude with full tool access, persistent memory, scheduled reminders, and integrations with 500+ apps."
+    }
+  ],
+  "skillsMarketplace": [
+    {
+      "name": "awesome-claude-skills",
+      "owner": "ComposioHQ",
+      "repo": "awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "description": "Community-curated list of Claude-compatible skills."
+    },
+    {
+      "name": "Awesome OpenClaw Skills",
+      "owner": "VoltAgent",
+      "repo": "awesome-openclaw-skills",
+      "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+      "description": "The awesome collection of OpenClaw Skills. Formerly known as Moltbot, originally Clawdbot."
+    },
+    {
+      "name": "OpenClaw Skills Library",
+      "owner": "BankrBot",
+      "repo": "openclaw-skills",
+      "url": "https://github.com/BankrBot/openclaw-skills",
+      "description": "Moltbot skill library for AI agents. Including polymarket, crypto trading, DeFi operations, automation, and more. Open a PR to add skills."
+    }
+  ]
+}

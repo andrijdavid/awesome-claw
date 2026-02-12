@@ -1,0 +1,20 @@
+site_name: Awesome Claw
+site_description: Awesome list of OpenClaw forks and skills marketplace repositories.
+site_url: https://example.com
+repo_name: awesome-claw
+repo_url: https://github.com/your-org/awesome-claw
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.instant
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Generated Stars: generated/stars.md
