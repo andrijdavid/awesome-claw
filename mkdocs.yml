@@ -17,4 +17,3 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Generated Stars: generated/stars.md

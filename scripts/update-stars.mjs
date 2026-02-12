@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -10,8 +10,6 @@ const rootDir = path.resolve(__dirname, "..");
 const DATA_FILE = path.join(rootDir, "data", "repos.json");
 const README_FILE = path.join(rootDir, "README.md");
 const DOCS_INDEX_FILE = path.join(rootDir, "docs", "index.md");
-const GENERATED_DIR = path.join(rootDir, "docs", "generated");
-const GENERATED_STARS_FILE = path.join(GENERATED_DIR, "stars.md");
 
 const START_MARKER = "<!-- BEGIN: GENERATED_REPO_LIST -->";
 const END_MARKER = "<!-- END: GENERATED_REPO_LIST -->";
@@ -63,9 +61,8 @@ function renderEntry(entry) {
   return `- [${entry.name}](${entry.url})${badge}${stars}${description}`;
 }
 
-function renderGeneratedBlock(data, updatedAtIso, headingLevel = 3) {
+function renderGeneratedBlock(data, updatedAtIso) {
   const updatedLine = `_Star counts updated: ${updatedAtIso} UTC._`;
-  const headingPrefix = "#".repeat(headingLevel);
 
   const forks = data.openclawForks.map(renderEntry).join("\n");
   const marketplace = data.skillsMarketplace.map(renderEntry).join("\n");
@@ -73,11 +70,11 @@ function renderGeneratedBlock(data, updatedAtIso, headingLevel = 3) {
   return [
     updatedLine,
     "",
-    `${headingPrefix} OpenClaw Forks`,
+    "### OpenClaw Forks",
     "",
     forks,
     "",
-    `${headingPrefix} Skills Marketplace`,
+    "### Skills Marketplace",
     "",
     marketplace,
   ].join("\n");
@@ -144,8 +141,7 @@ async function main() {
   }
 
   const updatedAtIso = new Date().toISOString().replace("T", " ").replace(/\.\d{3}Z$/, "");
-  const generatedBlock = renderGeneratedBlock(repoData, updatedAtIso, 3);
-  const generatedStandaloneBlock = renderGeneratedBlock(repoData, updatedAtIso, 2);
+  const generatedBlock = renderGeneratedBlock(repoData, updatedAtIso);
 
   const readme = await readFile(README_FILE, "utf8");
   const docsIndex = await readFile(DOCS_INDEX_FILE, "utf8");
@@ -153,18 +149,11 @@ async function main() {
   const updatedReadme = replaceGeneratedSection(readme, generatedBlock);
   const updatedDocsIndex = replaceGeneratedSection(docsIndex, generatedBlock);
 
-  await mkdir(GENERATED_DIR, { recursive: true });
   await writeFile(README_FILE, updatedReadme, "utf8");
   await writeFile(DOCS_INDEX_FILE, updatedDocsIndex, "utf8");
-  await writeFile(
-    GENERATED_STARS_FILE,
-    `# Generated Stars\n\n${generatedStandaloneBlock}\n`,
-    "utf8",
-  );
 
   console.log(`Updated ${README_FILE}`);
   console.log(`Updated ${DOCS_INDEX_FILE}`);
-  console.log(`Updated ${GENERATED_STARS_FILE}`);
 }
 
 main().catch((error) => {
