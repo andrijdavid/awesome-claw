@@ -33,6 +33,8 @@ _Star counts updated: 2026-04-05 04:13:00 UTC._
 
 <!-- END: GENERATED_REPO_LIST -->
 
+  - [shiny-novel-writer](https://github.com/Shine8592/novel-writer-skills) - Zero-cost Chinese novel generation suite (3 skills). 900K+ chars written, ¥0 API spend.
+
 ## How To Add A Repository
 
 1. Edit `data/repos.json` and add a new entry with `name`, `url`, `owner`, `repo`, and `description`.
