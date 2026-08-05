@@ -6,11 +6,11 @@ This site mirrors the repository `README.md` and is automatically updated by Git
 
 <!-- BEGIN: GENERATED_REPO_LIST -->
 
-_Star counts updated: 2026-08-04 06:03:41 UTC._
+_Star counts updated: 2026-08-05 06:00:24 UTC._
 
 ### OpenClaw Forks
 
-- [NanoClaw](https://github.com/qwibitai/nanoclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/qwibitai/nanoclaw?style=flat-square) - ⭐ 30,423 - OpenClaw fork with modernized updates.
+- [NanoClaw](https://github.com/qwibitai/nanoclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/qwibitai/nanoclaw?style=flat-square) - ⭐ 30,434 - OpenClaw fork with modernized updates.
 - [IronClaw](https://github.com/nearai/ironclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/nearai/ironclaw?style=flat-square) - ⭐ 12,588 - OpenClaw fork focused on gameplay and engine improvements.
 - [OpenClaw-Composio](https://github.com/ComposioHQ/openclaw-composio) - OpenClaw fork with integrated Composio plugin for easy tool authentication
 - [nanobot](https://github.com/HKUDS/nanobot) - 🐈 nanobot: The Ultra-Lightweight OpenClaw
@@ -19,8 +19,8 @@ _Star counts updated: 2026-08-04 06:03:41 UTC._
 
 ### Skills Marketplace
 
-- [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) ![GitHub Repo stars](https://img.shields.io/github/stars/ComposioHQ/awesome-claude-skills?style=flat-square) - ⭐ 71,715 - Community-curated list of Claude-compatible skills.
-- [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) ![GitHub Repo stars](https://img.shields.io/github/stars/VoltAgent/awesome-openclaw-skills?style=flat-square) - ⭐ 51,726 - The awesome collection of OpenClaw Skills. Formerly known as Moltbot, originally Clawdbot.
+- [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) ![GitHub Repo stars](https://img.shields.io/github/stars/ComposioHQ/awesome-claude-skills?style=flat-square) - ⭐ 71,802 - Community-curated list of Claude-compatible skills.
+- [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) ![GitHub Repo stars](https://img.shields.io/github/stars/VoltAgent/awesome-openclaw-skills?style=flat-square) - ⭐ 51,747 - The awesome collection of OpenClaw Skills. Formerly known as Moltbot, originally Clawdbot.
 - [OpenClaw Skills Library](https://github.com/BankrBot/openclaw-skills) ![GitHub Repo stars](https://img.shields.io/github/stars/BankrBot/openclaw-skills?style=flat-square) - ⭐ 1,170 - Moltbot skill library for AI agents. Including polymarket, crypto trading, DeFi operations, automation, and more. Open a PR to add skills.
 
 <!-- END: GENERATED_REPO_LIST -->
