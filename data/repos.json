@@ -22,7 +22,7 @@
     {
       "name": "nanobot",
       "url": "https://github.com/HKUDS/nanobot",
-      "description": "🐈 nanobot: The Ultra-Lightweight OpenClaw"
+      "description": "\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw"
     },
     {
       "name": "secure-openclaw",
@@ -33,6 +33,13 @@
       "name": "PicoClaw",
       "url": "https://github.com/sipeed/picoclaw",
       "description": "PicoClaw is an ultra-lightweight personal AI Assistant inspired by nanobot, refactored from the ground up in Go through a self-bootstrapping process, where the AI agent itself drove the entire architectural migration and code optimization."
+    },
+    {
+      "name": "OshoosiClaw",
+      "owner": "oyesanyf",
+      "repo": "OshoosiClaw",
+      "url": "https://github.com/oyesanyf/OshoosiClaw",
+      "description": "Decentralized Rust EDR and 7-Ring AI agent containment engine with AppContainer/Landlock sandboxing and YARA-X scanning."
     }
   ],
   "skillsMarketplace": [
