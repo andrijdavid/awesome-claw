@@ -18,6 +18,8 @@ _Star counts updated: 2026-10-30 10:00:05 UTC._
 
 ### OpenClaw Forks
 
+- [OshoosiClaw](https://github.com/oyesanyf/OshoosiClaw) ![GitHub Repo stars](https://img.shields.io/github/stars/oyesanyf/OshoosiClaw?style=flat-square) - Decentralized Rust EDR and 7-Ring AI agent containment engine with AppContainer/Landlock sandboxing and YARA-X scanning.
+
 - [NanoClaw](https://github.com/qwibitai/nanoclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/qwibitai/nanoclaw?style=flat-square) - ⭐ 31,057 - OpenClaw fork with modernized updates.
 - [IronClaw](https://github.com/nearai/ironclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/nearai/ironclaw?style=flat-square) - ⭐ 12,692 - OpenClaw fork focused on gameplay and engine improvements.
 - [OpenClaw-Composio](https://github.com/ComposioHQ/openclaw-composio) - OpenClaw fork with integrated Composio plugin for easy tool authentication
